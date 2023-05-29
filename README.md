@@ -4,4 +4,8 @@
 - f'{v}{f} => f string
 - def ar(*ar) => args which work like list
 - string and tuplle are immutable
+- list -> []
+- touple -> ()
+- set -> {}
+<br>
 [Back To Top &#8593;](#python) <br>
