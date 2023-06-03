@@ -5,7 +5,7 @@
 - def ar(*ar) => args which work like list
 - string and tuplle are immutable
 - list -> []
-- touple -> ()
+- tuple -> ()
 - set -> {}
 
 [Back To Top &#8593;](#python)
