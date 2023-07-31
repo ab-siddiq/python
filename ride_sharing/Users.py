@@ -1,4 +1,5 @@
 # abc stands for abstract base class
+# ggg
 from abc import ABC,abstractmethod
 from datetime import datetime
 class User(ABC):
