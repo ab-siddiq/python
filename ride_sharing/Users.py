@@ -1,5 +1,4 @@
 # abc stands for abstract base class
-# ggg
 from abc import ABC,abstractmethod
 from datetime import datetime
 class User(ABC):
@@ -10,6 +9,7 @@ class User(ABC):
         self.wallet = 0
         # TODO: id will be set dynamically
         self.__id=0
+    # abstract method means who will inherit the class need to implement
     @abstractmethod
     def display_profile(self):
         # if someone call this method it will trough error that need to implement
@@ -26,6 +26,7 @@ class Rider(User):
     def request_ride(self,location,destination):
         if not self.current_ride:
             # TODO: set ride properly
+            # TODO: set current ride via ride match
             ride_request=None
             self.current_ride = None
 
@@ -56,8 +57,8 @@ class Ride:
         self.end_time=None
         self.estimated_fare=None
 
-    def set_driver(self,drive):
-        self.driver=Driver
+    def set_driver(self,driver):
+        self.driver=driver
 
     def start_ride(self):
         self.start_time=datetime.now()
